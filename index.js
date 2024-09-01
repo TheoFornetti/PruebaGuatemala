@@ -22,8 +22,10 @@ app.get("/", (req, res) => {
 
 app.post("/messageIn", (req, res) => {
   const fromNumber = req.body.From;
+  console.log("Mensaje Recivido")
   console.log(fromNumber);
-  broadcast("Hola Theo");
+
+  //broadcast("Hola Theo");
   res.sendStatus(200);
 });
 
